@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    //border: solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    font-family: "Oswald", sans-serif;
+
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    nav {
+        //border: solid green;
+        width: 50%;
+        height: 15vh;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 15vh;
+    }
+
+    a {
+        text-decoration: none;
+        color: #5b5b5b;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    a:hover {
+        font-size: 1.5rem;
+
+    }
+
+    // Mudará o estilo do elemento selecionado ao passar o cursor em cima
+    .contato {
+        font-size: 1.5rem;
+        // border: solid;
+        width: 20vw;
+        text-align: center;
+    }
+}
+
+main {
+    .container-background-image {
+        // background-color: #120e96;
+        height: 100vh;
+        background-image: url("imagens/background.png");
+        background-repeat: no-repeat; // para não repetir o background
+        // background-size: contain; // redimensiona a imagem pro tamanho que ela é
+        background-size: cover; // redimensiona a imagem para o tamanho total da caixa
+        background-position: center; // posiciona a imagem para o meio
+
+        color: #fff;
+        font-family: 'Oswald', sans-serif;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+
+        div.container-marca {
+
+            height: 30%;
+            margin-left: 6%;
+            
+                h1 {
+                    font-size: 4.4rem;
+                    //color: #fff;
+                    font-weight: 700;
+                }
+            
+                h2 {
+                    font-size: 2rem;
+                    font-weight: 300;
+                }
+            
+               
+        }
+        a.btn-servicos {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background-color: #0016DF;
+            text-decoration: none;
+            padding: 10px 60px;
+            margin-left: 9%;
+        }
+    }
+
+    .container-gestaoportuaria {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+
+        .cgp-esquerdo {
+            width: 25%;
+
+            h2 {
+                color: #0017E9;
+                font-size: 1.4rem;
+                font-weight: 500;
+                font-family: 'Oswald', sans-serif;
+                margin-bottom: 10%;
+            }
+            
+            h3 {
+                font-weight: 800;
+                font-size: 1.8rem;
+                margin-bottom: 14%;
+            }
+
+            p {
+                text-indent: 10px;
+                margin-bottom: 14%;
+                font-size: 1.1rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: #0017E9;
+                font-size: 1.1rem;
+            }
+        }
+
+        .cgp-direito {
+            width: 30%;
+        }
+    }
+
+    .container-servicos {
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        background-color: #d8d8d8;
+
+        h2 {
+            color: #0017E9;
+            font-weight: 500;
+            margin-bottom: 2%;
+        }
+
+        h3 {
+            font-weight: 500;
+            margin-bottom: 10%;
+        }
+
+        article.itens-servicos {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            height: 60%;
+            text-align: left;
+
+            .box-servico {
+                width: 25%;
+                background-color: #fff;
+                height: 100%;
+                box-shadow: #0000005d 0px 0px 10px 2px;
+                
+                img {
+                    width: 100%;
+                }
+
+                .descricao {
+                    padding: 5%;
+
+                    h4 {
+                        margin-bottom: 5%;
+                    }
+    
+                    p {
+                        font-weight: 200;
+                    }
+                }
+            }
+        }
+    }
+
+    .container-contato {
+        width: 100vw;
+        height: 100vh;
+        font-family: 'Oswald', sans-serif;
+        display: flex;
+        justify-content: space-around;
+
+        h2 {
+            color: #0017E9;
+            font-weight: 500;
+            margin-bottom: 2%;
+        }
+
+        h3 {
+            font-weight: 500;
+            margin-bottom: 10%;
+        }
+
+        article.atendimento {
+            width: 45%;
+
+            section.unidades {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 20px;
+
+                figcaption {
+                    font-weight: 500;
+                }
+            }
+        }
+
+        article.fale-conosco {
+            width: 40%;
+
+            form {
+
+                width: 60%;
+
+                div.campo {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 5%;
+
+                    label {
+                        font-weight: 300;
+                    }
+
+                    input {
+                        height: 30px;
+                    }
+                }
+
+                button.btn-form {
+                    margin-top: 15%;
+                    color: #fff;
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                    background-color: #0016DF;
+                    border: none;
+                    text-decoration: none;
+                    width: 100%;
+                    padding: 3% 0;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #d8d8d8;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+
+    p {
+        font-weight: 700;
+        font-size: 1.04rem;
+    }
+}
+
+@media (max-width: 900px) {
+    
+    header {
+        h2 {
+            display: none;
+        }
+    
+        ul {
+            flex-direction: column
+        }
+
+        .contato {
+            display: none;
+        }
+    }
+
+    main {
+        .container-background-image {
+            margin-bottom: 30%;
+            align-items: center;
+        }
+
+        .container-gestaoportuaria {
+            flex-direction: column;
+            margin-bottom: 30%;
+
+            .cgp-esquerdo, .cgp-direito {
+                width: 100%;
+            }
+        }
+
+        .container-servicos {
+            article.itens-servicos {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+            }
+        }
+
+        .container-contato {
+            flex-direction: column;
+        }
+    }
+}
